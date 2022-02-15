@@ -6,8 +6,7 @@
 
 class Operaciya:
     def __init__(self):
-        self.vvod_dannyh()
-
+        self.x = ''
 
     def my_1(self):
         if self.x.isdigit():
@@ -41,10 +40,9 @@ class Operaciya:
     def my_2(self):
         print('Длинна символов объекта', len(self.x))
 
-    def vvod_dannyh(self):
-        self.x = input('Vvedite dannye : ')
 
 
 parametr = Operaciya()
+parametr.x = input('Vvedite dannye : ')
 parametr.my_1()
 parametr.my_2()
